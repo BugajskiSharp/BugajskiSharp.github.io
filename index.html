@@ -21,6 +21,18 @@
       filter: brightness(70%);
     }
 
+    /* NAME at top left */
+    .hero-name {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+      z-index: 10;
+    }
+
+
     /* HERO TEXT - Right aligned but lines centered relative to each other */
    .hero-text-wrapper {
       position: absolute;
@@ -54,22 +66,23 @@
 
     /* NAV BAR */
     .navbar {
-      position: absolute; /* stick at top of hero */
+      position: absolute;
       top: 20px;
       right: 20px;
       display: flex;
-      gap: 20px;
-      background-color: rgba(0,0,0,0.5); /* semi-transparent background so links are readable */
-      padding: 10px 15px;
-      border-radius: 5px;
+      gap: 40px;
       z-index: 10;
     }
 
     .navbar a {
       color: white;
       text-decoration: none;
-      font-size: 16px;
+      font-size: 18px;
       font-weight: bold;
+    }
+
+    .navbar a:hover {
+      text-decoration: underline;
     }
 
     .navbar a:hover {
