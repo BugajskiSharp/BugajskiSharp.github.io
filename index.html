@@ -6,9 +6,15 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <style>
-    body {
+    html, body {
       margin: 0;
       font-family: Arial, sans-serif;
+      min-height: 100%;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
     }
 
     /* HERO IMAGE */
@@ -98,34 +104,18 @@
       padding: 40px;
       max-width: 800px;
       margin: auto;
-      text-align: left;
       line-height: 1.6;
-    }
+      flex: 1; /* content takes all remaining space */
+}
 
     /* FOOTER */
     footer {
-      position: fixed;
-      bottom: 0;
-      width: 100%;
       background-color: white;
       color: black;
       text-align: center;
       padding: 15px 0;
       border-top: 1px solid #ccc;
       font-size: 14px;
-    }
-
-    footer a {
-      color: black;
-      margin: 0 15px;
-      font-size: 24px;
-      text-decoration: none;
-    }
-
-    footer a:hover {
-      color: #0a66c2; /* subtle hover color */
-      transform: scale(1.2);
-      transition: 0.2s;
     }
   </style>
 </head>
