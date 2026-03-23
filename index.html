@@ -22,28 +22,34 @@
     }
 
     /* HERO TEXT - Right aligned but lines centered relative to each other */
-   .hero-text {
+   .hero-text-wrapper {
       position: absolute;
       top: 50%;
       right: 8%;
       transform: translateY(-50%);
       display: flex;
       flex-direction: column;
-      align-items: flex-end; /* align to right side */
-      justify-content: center; /* center the two lines vertically relative to each other */
+      align-items: flex-end; /* right-aligned */
+      justify-content: center;
+    }
+
+    .hero-text {
+      text-align: center; /* centers the lines relative to each other */
       color: white;
-      text-align: right; /* keeps text right-aligned */
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* center the two lines as a block */
     }
 
     .hero-text h1 {
-      font-size: 48px;
+      font-size: 72px; /* bigger About Me */
       margin: 0;
       font-weight: bold;
     }
 
     .hero-text p {
-      font-size: 24px;
-      margin: 5px 0 0 0;
+      font-size: 36px; /* bigger "This is what I do" */
+      margin: 10px 0 0 0;
     }
 
     /* NAV BAR */
@@ -94,10 +100,9 @@
 
   <!-- NAVIGATION BAR -->
   <div class="navbar">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="resume.html">Resume</a>
-    <a href="projects.html">Projects</a>
+      <a href="index.html">About</a>
+      <a href="resume.html">Resume</a>
+      <a href="projects.html">Projects</a>
   </div>
 
   <!-- ABOUT CONTENT -->
